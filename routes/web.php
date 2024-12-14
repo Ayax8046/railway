@@ -46,7 +46,7 @@ Route::middleware('guest')->group(function () {
     Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
     // Ruta para ver el perfil de usuario
-    Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show'); // Esta es la nueva ruta
+    //Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show'); // Esta es la nueva ruta
 
     // Ruta para borrar el perfil de usuario
     Route::delete('/profile/destroy', [ProfileController::class, 'destroy'])->name('profile.destroy');
