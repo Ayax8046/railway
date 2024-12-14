@@ -18,12 +18,5 @@ export default defineConfig({
     },
     build: {
         outDir: 'public/build',  // Verifica que esta ruta esté correcta
-    },
-    server: {
-        https: true, // Habilita HTTPS en el servidor de desarrollo
-        // proxy: {
-        //     '/build': 'http://localhost',  // Asegura que Vite sirva los archivos correctamente
-        // },
-    },
-    //base: process.env.NODE_ENV === 'production' ? '/build/' : '/', // Asegura que en producción use HTTPS
+    }
 });
