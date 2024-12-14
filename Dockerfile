@@ -28,7 +28,7 @@ WORKDIR /app
 COPY . /app
 
 # Copia los archivos del frontend construido al directorio público de Laravel
-COPY --from=builder /app/public/build /app/public/build
+COPY --from=builder /public/build /public/build
 
 # Instala dependencias de Composer
 RUN composer install --no-dev --optimize-autoloader
