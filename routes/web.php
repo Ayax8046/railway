@@ -58,7 +58,7 @@ Route::middleware('guest')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
     // Ruta para actualizar la contraseña
-    Route::put('/user/password', [ProfileController::class, 'updatePassword'])->name('password.update');
+    Route::put('/user/password', [ProfileController::class, 'updatePassword'])->name('user.password.update');
 
     // RUTAS PARA OBTENER LOS PDFs
     Route::get('clientesPDF/{id_cliente}', [FPDFController::class, 'clientesPDF'])->name('clientesPDF');

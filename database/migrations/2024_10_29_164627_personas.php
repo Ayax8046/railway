@@ -20,11 +20,8 @@ return new class extends Migration
             $table->string('usuario', 25)->unique(); 
             $table->string('contraseña', 25); 
             $table->date('fecha_nacimiento'); 
-        
-            // COLUMNAS, CLAVES FORÁNEAS
-            $table->unsignedBigInteger('id_rol'); 
-            $table->unsignedBigInteger('id_promo'); 
-        
+            $table->integer('id_rol'); 
+            $table->integer('id_promo');
             $table->timestamps(); // created_at y updated_at
         });
         
