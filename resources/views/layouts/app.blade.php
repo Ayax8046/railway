@@ -35,7 +35,7 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
     <!-- Esto asegura que los archivos generados por Vite se sirvan sobre HTTPS -->
     @if (app()->environment('production'))
