@@ -26,10 +26,6 @@ return new class extends Migration
             $table->unsignedBigInteger('id_promo'); 
         
             $table->timestamps(); // created_at y updated_at
-        
-            // DEFINICIÓN, CLAVES FORÁNEAS
-            $table->foreign('id_rol')->references('id')->on('roles')->onDelete('cascade');
-            $table->foreign('id_promo')->references('id')->on('promociones')->onDelete('cascade');
         });
         
     }

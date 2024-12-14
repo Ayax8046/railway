@@ -23,11 +23,6 @@ return new class extends Migration
             $table->string('fecha_reserva', 10); //DD-MM-YYYY
             $table->integer('id_estado'); 
             $table->timestamps(); // created_at y updated_at
-
-            // DEFINICIÓN, CLAVES FORÁNEAS
-            $table->foreign('id_cliente')->references('id')->on('personas')->onDelete('cascade');
-            $table->foreign('id_servicio')->references('id')->on('servicios')->onDelete('cascade');
-            $table->foreign('id_estado')->references('id')->on('estados')->onDelete('cascade');
         });
     }
 
