@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('apellidos', 50); 
             $table->string('email', 50)->unique(); 
             $table->string('usuario', 25)->unique(); 
-            $table->string('contraseña', 25); 
+            $table->string('contraseña', 255); 
             $table->date('fecha_nacimiento'); 
             $table->integer('id_rol'); 
             $table->integer('id_promo');
