@@ -38,7 +38,7 @@
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
     <!-- Esto asegura que los archivos generados por Vite se sirvan sobre HTTPS -->
-    @if (app()->environment('production'))
+    {{-- @if (app()->environment('production'))
         <script>
             // Asegurarse de que los archivos generados por Vite usen HTTPS
             const manifest = @json(@mix('/build/manifest.json'));
@@ -49,7 +49,7 @@
             document.body.insertAdjacentHTML('beforeend', `<script src="https://${window.location.host}/${versionedJS}">
         </script>`);
         </script>
-    @endif
+    @endif --}}
 </head>
 
 <body class="font-sans antialiased">
