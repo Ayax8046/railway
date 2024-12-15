@@ -70,8 +70,6 @@
 
             </div>
         </div>
-    @else
-        {{ redirect()->route('login') }}
     @endif
 </x-app-layout>
 
