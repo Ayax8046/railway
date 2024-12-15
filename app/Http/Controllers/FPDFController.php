@@ -163,7 +163,7 @@ class FPDFController extends FPDF // Cambiado para extender FPDF
         $this->Cell(0, 5, 'Fecha Nacimiento: ' . $reservaCliente[0]->persona_nacimiento, 0, 1, 'L');
 
         $this->Ln(10);
-        $this->Image('logo.png',10,8,33);
+        $this->Image(public_path('images/logo.png'),10,8,33);
         $this->Ln(10);
 
         // INFO RESERVAS
