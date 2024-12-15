@@ -39,7 +39,7 @@
                             <label for="precio" class="form-label">Precio / Persona</label>
                             <input type="text" class="form-control" name="" id=""
                                 value="{{ $reserva->precio }}" disabled>
-                                <input type="hidden" class="form-control" name="precio" id="precio"
+                            <input type="hidden" class="form-control" name="precio" id="precio"
                                 value="{{ $reserva->precio }}">
                         </div>
 
@@ -70,19 +70,21 @@
 
             </div>
         </div>
+    @else
+        {{ redirect()->route('login') }}
     @endif
 </x-app-layout>
 
 <script>
     // Obtener la fecha de hoy
     const today = new Date();
-    
+
     // Incrementar 5 días
     today.setDate(today.getDate() + 5);
-    
+
     // Formatear la fecha a YYYY-MM-DD
     const minDate = today.toISOString().split('T')[0];
-    
+
     // Establecer la fecha mínima para el campo
     document.getElementById('fecha_reserva').setAttribute('min', minDate);
 </script>
