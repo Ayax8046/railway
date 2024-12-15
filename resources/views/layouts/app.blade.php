@@ -34,8 +34,8 @@
     <!-- APEXCHARTS -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-    @vite('resources/css/app.css')
-    @vite('resources/js/app.js')
+    {{-- @vite('resources/css/app.css')
+    @vite('resources/js/app.js') --}}
 
 
 

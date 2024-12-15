@@ -18,7 +18,6 @@ export default defineConfig({
     },
     build: {
         outDir: 'public/build',  // Verifica que esta ruta esté correcta
-        // base: '/',
-        manifest:true
+        base: '/'
     }
 });
