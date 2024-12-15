@@ -34,9 +34,11 @@
     <!-- APEXCHARTS -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-    <link rel="stylesheet" href="{{ asset('build/assets/app-CWOSe5QM.css') }}">
+    <!-- Incluir los archivos CSS y JS generados por Vite -->
+    <link rel="stylesheet" href="/build/assets/app-CWOSe5QM.css">
 
-    @vite(['resources/js/app.js'])
+    <!-- Asegúrate de que el script de Vue.js no interfiere con Bootstrap -->
+    <script type="module" src="/build/assets/app-hC4or90k.js"></script>
 
     <!-- Scripts -->
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
