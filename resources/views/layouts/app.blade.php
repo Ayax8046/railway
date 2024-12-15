@@ -34,8 +34,9 @@
     <!-- APEXCHARTS -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-    <link rel="stylesheet" href="{{ asset('build/assets/app-CWOSe5QM.css') }}">
-    <script type="module" src="{{ asset('build/assets/app-hC4or90k.js') }}"></script>
+    <link rel="stylesheet" href="https://railway-production-e4b5.up.railway.app/build/assets/app-CWOSe5QM.css">
+    <script type="module" src="https://railway-production-e4b5.up.railway.app/build/assets/app-hC4or90k.js"></script>
+
 
 
     <!-- Scripts -->
