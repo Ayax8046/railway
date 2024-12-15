@@ -34,6 +34,10 @@
     <!-- APEXCHARTS -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
+    <link rel="stylesheet" href="{{ asset('build/assets/app-CWOSe5QM.css') }}">
+
+    @vite(['resources/js/app.js'])
+
     <!-- Scripts -->
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
