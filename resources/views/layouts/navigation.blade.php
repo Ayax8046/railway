@@ -134,4 +134,6 @@
             </div>
         </div>
     </nav>
+@else
+    {{ redirect()->route('login') }}
 @endif
