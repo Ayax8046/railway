@@ -36,6 +36,25 @@
 
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
+
+
+
+    <!-- Scripts -->
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+
+    <!-- Esto asegura que los archivos generados por Vite se sirvan sobre HTTPS -->
+    {{-- @if (app()->environment('production'))
+        <script>
+            // Asegurarse de que los archivos generados por Vite usen HTTPS
+            const manifest = @json(@mix('/build/manifest.json'));
+            const versionedCSS = manifest['resources/css/app.css'] ?? '';
+            const versionedJS = manifest['resources/js/app.js'] ?? '';
+            document.head.insertAdjacentHTML('beforeend',
+                `<link rel="stylesheet" href="https://${window.location.host}/${versionedCSS}">`);
+            document.body.insertAdjacentHTML('beforeend', `<script src="https://${window.location.host}/${versionedJS}">
+        </script>`);
+        </script>
+    @endif --}}
 </head>
 
 <body class="font-sans antialiased">

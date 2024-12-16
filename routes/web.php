@@ -23,7 +23,7 @@ Route::middleware('guest')->group(function () {
     Route::post('/register', [RegisteredUserController::class, 'store']);
 });
 
-// Route::middleware('auth')->group(function () {
+Route::middleware('auth')->group(function () {
 
     // Ruta para dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -96,7 +96,7 @@ Route::middleware('guest')->group(function () {
     // EXCEL
     Route::get('/exportar-reservas', [ReservasController::class, 'export'])->name('excelReservas');
 
-// });
+});
 
 Route::middleware('auth')->get('/user', function () {
     return response()->json(Auth::user());
